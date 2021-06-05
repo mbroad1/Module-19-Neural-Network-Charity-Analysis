@@ -41,7 +41,7 @@ The purpose of this analysis is to evaluate which non-profit organizations shoul
 
 #### Optimized Model Attempt #2:
 ![Model_#2](https://github.com/mbroad1/Module-19-Neural-Network-Charity-Analysis/blob/main/optimized_model_%232.png)
-- For my second optimized model, I used the same layout as my initial model (2 hidden layers with 80 neurons in the first and 50 neurons in the second with relu as their activation functions and sigmoid as the activation function for the output layer) and added an additional third hidden layer with 30 neurons.
+- For my second attempt at optimizing the model, I used the same layout as my initial model (2 hidden layers with 80 neurons in the first and 50 neurons in the second with relu as their activation functions and sigmoid as the activation function for the output layer) and added an additional third hidden layer with 30 neurons.
 - Additionally, I trained the model over 20 epochs.
 ![Model_#2_Accuracy](https://github.com/mbroad1/Module-19-Neural-Network-Charity-Analysis/blob/main/optimized_model_%232_results.png)
 - The accuracy of this model was **72.49%** which was very similar to the accuracy of the intial model.
@@ -52,3 +52,12 @@ The purpose of this analysis is to evaluate which non-profit organizations shoul
 - Finally, for my third attempt at optimizing the model, I used the exact same model as the initial model except I trained this model over 200 epochs instead of 100 epochs.
 ![Model_#3_Accuracy](https://github.com/mbroad1/Module-19-Neural-Network-Charity-Analysis/blob/main/optimized_model_%233_results.png)
 - The accuracy of this model was **72.58%**.
+---
+
+## Summary:
+- The model with the best accuracy was the first optimized model I created based on the keras-tuner results which had an accuracy of **72.65%**.
+- None of the models created surpassed an accuracy of 75% – all the accuracies from the models were around 72-73%.
+- Adding an additional third hidden layer like in the second attempt at optimizing the model, only increased the accuracy by **0.07%**, which is very insignificant.
+- Likewise, adding more epochs like in the third attempt at optimizing the model only increased the accuracy by **0.16%** which is also very insigificant.
+- Since the best model produced by the keras-tuner was only **72.65%**, this result tells me that this dataset could probably be better interpreted by a different supervised machine learning model.
+- I think a thoughtfully built random forest model would be ideal for this dataset because it could have a lot of decision trees within it that could be specific to different features of the dataset, and thus, could figure out which features are predictive of success or failure of an organization to use donated funds effectively and produce more accurate results.
