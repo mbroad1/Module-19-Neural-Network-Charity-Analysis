@@ -34,5 +34,21 @@ The purpose of this analysis is to evaluate which non-profit organizations shoul
    - Third hidden layer: 9 neurons
    - Fourth hidden layer: 5 neurons
    - Fifth hidden layer: 3 neurons
+ - Additionally, the keras-tuner suggested to use 20 epochs to train the model.
+
 ![Keras_Tuner_Model_#1](https://github.com/mbroad1/Module-19-Neural-Network-Charity-Analysis/blob/main/optimized_model_%231_results.png)
 - The accuracy of the best model from the keras-tuner was **72.65%**, a slight increase from the initial model, but not quite 75%.
+
+#### Optimized Model Attempt #2:
+![Model_#2](https://github.com/mbroad1/Module-19-Neural-Network-Charity-Analysis/blob/main/optimized_model_%232.png)
+- For my second optimized model, I used the same layout as my initial model (2 hidden layers with 80 neurons in the first and 50 neurons in the second with relu as their activation functions and sigmoid as the activation function for the output layer) and added an additional third hidden layer with 30 neurons.
+- Additionally, I trained the model over 20 epochs.
+![Model_#2_Accuracy](https://github.com/mbroad1/Module-19-Neural-Network-Charity-Analysis/blob/main/optimized_model_%232_results.png)
+- The accuracy of this model was **72.49%** which was very similar to the accuracy of the intial model.
+
+
+#### Optimized Model Attempt #3:
+![Model_#3](https://github.com/mbroad1/Module-19-Neural-Network-Charity-Analysis/blob/main/optimized_model_%233.png)
+- Finally, for my third attempt at optimizing the model, I used the exact same model as the initial model except I trained this model over 200 epochs instead of 100 epochs.
+![Model_#3_Accuracy](https://github.com/mbroad1/Module-19-Neural-Network-Charity-Analysis/blob/main/optimized_model_%233_results.png)
+- The accuracy of this model was **72.58%**.
