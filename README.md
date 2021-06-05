@@ -15,3 +15,24 @@ The purpose of this analysis is to evaluate which non-profit organizations shoul
 #### Dropped Features:
 ![Dropped_Features](https://github.com/mbroad1/Module-19-Neural-Network-Charity-Analysis/blob/main/dropped%20features.png)
 - The features dropped from the dataset were "EIN" and "NAME" because these inputs are arbitrary and ultimately would not influence whether an organization would be successful in utilizing donated funds effectively.
+
+### Compiling, Training, and Evaluating the Model
+#### Numbers of Neurons, Layers, and Activation Function for my Initial Model:
+![Initial_Model](https://github.com/mbroad1/Module-19-Neural-Network-Charity-Analysis/blob/main/initial%20model.png)
+- For my intial model, I created a deep learning neural network that had two hidden layers:
+  - The first hidden layer had 80 neurons.
+  - The second hidden layer had 30 neurons.
+- The activation function for each hidden layer was relu and the activation function for the output layer was sigmoid.
+- The accuracy of this model after training over 100 epochs was **72.42%**
+
+#### Optimized Model Attempt #1:
+![Keras_Tuner_Results](https://github.com/mbroad1/Module-19-Neural-Network-Charity-Analysis/blob/main/Module%2019%20Challenge_KerasTuner_Results%20%232.png)
+- In order to optimize the deep learning neural network for this dataset, I ran keras-tuner on the dataset and found that the best activation function for the hidden layers was tanh.
+  - Likewise, the keras-tuner results showed that I needed to add an additional 4 layers to my model (so in total there would be 5 hidden layers) with the following number of neurons in each layer:
+   - First hidden layer: 9 neurons
+   - Second hidden layer: 7 neurons
+   - Third hidden layer: 9 neurons
+   - Fourth hidden layer: 5 neurons
+   - Fifth hidden layer: 3 neurons
+![Keras_Tuner_Model_#1](https://github.com/mbroad1/Module-19-Neural-Network-Charity-Analysis/blob/main/optimized_model_%231_results.png)
+- The accuracy of the best model from the keras-tuner was **72.65%**, a slight increase from the initial model, but not quite 75%.
