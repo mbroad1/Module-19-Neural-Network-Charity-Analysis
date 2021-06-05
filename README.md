@@ -6,5 +6,8 @@ The purpose of this analysis is to evaluate which non-profit organizations shoul
 
 ## Results:
 
-### Data Preprocessing:
-
+### Data Preprocessing
+#### Targets and Features:
+![Targets_and_Features](https://github.com/mbroad1/Module-19-Neural-Network-Charity-Analysis/blob/main/target%20and%20features.png)
+- The target, y, was assigned to the column "IS_SUCCESSFUL" which assigned a 1 to organizations that were successful in utilizing the donated funds effectively and a 0 to organizations that failed to use the funds wisely.
+- The features (denoted all as X) were all the other variables that were not "IS_SUCCESSFUL", "EIN", and "NAME" such as "APPLICATION_TYPE" and "USE_CASE" because these inputs may be helpful in determining the relationships between the variables and how those relationships influence the success or failure of an organization to use the donated funds well.
